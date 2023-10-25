@@ -6,6 +6,21 @@ header {
   background-color: #082b20;
   color: aliceblue;
 }
+.app_header {
+  margin-bottom: 2rem;
+}
+.app_header__short_info {
+  height: 4rem;
+  align-items: center;
+}
+
+
+main {
+  margin-bottom: 2rem;
+  height: 20rem;
+}
+
+
 
 @media(min-width: 350px) {
   * {
@@ -13,7 +28,7 @@ header {
   }
 }
 
-@media(min-width: 700px) {
+@media(min-width: 768px) {
   * {
     font-size: 1.2rem;
   }

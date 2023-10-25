@@ -1,3 +1,5 @@
-@import url("/node_modules/bootstrap/dist/css/bootstrap.css");
+@import url("/node_modules/bootstrap/dist/css/bootstrap");
 
-@import url(parking.css);
+@import url(parking);
+
+@import url('bootstrap-icons/font/bootstrap-icons');
