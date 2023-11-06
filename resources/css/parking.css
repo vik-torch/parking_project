@@ -21,6 +21,11 @@ main {
 }
 
 
+@media(max-width: 350px) {
+  * {
+    font-size: 1.3rem;
+  }
+}
 
 @media(min-width: 350px) {
   * {
