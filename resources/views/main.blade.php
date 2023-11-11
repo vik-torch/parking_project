@@ -3,7 +3,7 @@
   <main>
     <div class="container">
       <div class="app_main d-flex justify-content-center">
-        <form class="">
+        <form class="" action="{{ route('pay.index') }}" method="get">
           <div class="form-group">
             <label for="form_input__ticket_number">Введите номер билета</label>
             <div class="mt-2">

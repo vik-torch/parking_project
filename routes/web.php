@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MainController;
+// use App\Http\Controllers\MainController;
+// use App\Http\Controllers\Pay\IndexController as PayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,15 @@ use App\Http\Controllers\MainController;
 // });
 
 // Route::get('/mypage', [MainController::class, 'index']);
-Route::get('/', [MainController::class, 'index']);
+// Route::get('/', [MainController::class, 'index']);
+
+// Route::get('/pay', [PayController::class, 'index'])->name('pay.index');
+// Route::get('/pay', function() { return 'Привет';});
+
+Route::group(['namespace' => 'App\Http\Controllers'], function() {
+  Route::get('/', 'MainController@index');
+
+  Route::group(['namespace' => 'Pay'], function() {
+    Route::get('/pay', 'IndexController@index')->name('pay.index');
+  });
+});
