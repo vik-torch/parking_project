@@ -5,7 +5,7 @@
       <div class="tacket_data d-flex justify-content-end">
         <div class="ticket_number__wrapper">
           <div class="ticket_number">
-            Билет № 123123123
+            Билет № {{$ticket_number}}
           </div>
         </div>
       </div>
