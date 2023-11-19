@@ -4,11 +4,11 @@
       <div class="app_header__short_info d-flex justify-content-between">
         <div class="app_header_row__service_name">
           <a href="/">
-            <img src="/static/media/payparking_logo.svg" alt="logo">
+            <img id="logo_img" alt="logo">
           </a>
         </div>
         <div class="hamburger_menu">
-          <i class="bi bi-list"></i>
+          <i class="app_header__hamburger bi bi-list"></i>
         </div>
       </div>
     </div>

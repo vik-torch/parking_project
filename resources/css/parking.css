@@ -1,9 +1,10 @@
 * {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
 }
 
 header {
-  background-color: #082b20;
+  /* background-color: #082b20; */
   color: aliceblue;
 }
 .app_header {
@@ -12,6 +13,20 @@ header {
 .app_header__short_info {
   height: 4rem;
   align-items: center;
+}
+
+body {
+  background-color: #1B1B1B;
+  color: #FFFFFF;
+}
+
+
+.app_main__element {
+  max-width: 300px;
+}
+.app_main__title {
+  font-weight: 600;
+  text-align: center;
 }
 
 .ticket_number {
@@ -25,6 +40,18 @@ header {
 
 .list_item__wrapper {
   padding-top: 0.5rem;
+}
+
+.form_btn {
+  background-color: #FEB101;
+}
+.form_btn:active {
+  background-color: #DB9900 !important;
+}
+.form_input__element_input {
+  background-color: inherit;
+  border-color: #FEB101;
+  color: inherit;
 }
 
 .payment_method__item {
@@ -55,14 +82,22 @@ main {
 
 @media(max-width: 350px) {
   * {
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .app_header__hamburger {
+    font-size: 1.8rem;
   }
 }
 
 @media(min-width: 350px) {
   * {
-    font-size: 1.2rem;
+    font-size: 1rem;
     /* font-size: 1.4rem; */
+  }
+
+  .app_header__hamburger {
+    font-size: 1.8rem;
   }
 }
 
