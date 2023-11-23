@@ -8,7 +8,7 @@ header {
   color: aliceblue;
 }
 .app_header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .app_header__short_info {
   height: 4rem;
@@ -20,10 +20,34 @@ body {
   color: #FFFFFF;
 }
 
-
 .app_main__element {
-  max-width: 300px;
+  max-width: 320px;
 }
+
+.app_main__header {
+  align-items: center;
+  justify-content: center;
+}
+.app_main__header_content {
+  width: 500px;
+}
+.img_header__wrapper {
+  vertical-align: middle;
+  max-width: 500px;
+}
+.img_header__wrapper>img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 12.4rem;
+}
+
+.vignette_vertical {
+  background: linear-gradient(0deg,var(--dark-background) 0,transparent 50%,var(--dark-background) 100%);
+}
+
+/* .app_main__element {
+  max-width: 300px;
+} */
 .app_main__title {
   font-weight: 600;
   text-align: center;
@@ -42,13 +66,29 @@ body {
   padding-top: 0.5rem;
 }
 
+.form-group label {
+  font-weight: 400;
+}
+.form_input__element_input, .form_btn {
+  height: 3.2rem;
+}
 .form_btn {
   background-color: #FEB101;
+  font-weight: 600;
 }
-.form_btn:active {
+.form_btn:hover {
   background-color: #DB9900 !important;
+  /* color: #212529; */
 }
 .form_input__element_input {
+  background-color: inherit;
+  border-color: #FEB101;
+  color: #FFFFFF;
+}
+.form_input__element_input::placeholder {
+    color: #cfcccc;
+}
+.form_input__element_input:active {
   background-color: inherit;
   border-color: #FEB101;
   color: inherit;
@@ -76,8 +116,9 @@ body {
 
 main {
   margin-bottom: 2rem;
-  height: 20rem;
+  /* height: 20rem; */
 }
+
 
 
 @media(max-width: 350px) {

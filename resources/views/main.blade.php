@@ -1,13 +1,28 @@
 @extends('layouts.main')
 @section('content')
   <main>
+    @include('layouts.img_header')
     <div class="container">
-      <div class="app_main d-flex  justify-content-center">
+      <div class="app_main d-flex justify-content-center">
         <div class="app_main__content">
           <div class="app_main__element">
             <p class="app_main__title">
               ОПЛАТА ПАРКОВОЧНОГО МЕСТА ТРЦ “РИО” ДМИТРОВКА
             </p>
+          </div>
+          <div class="app_main__element">
+            <div class="circle">
+
+            </div>
+            <div class="circle">
+
+            </div>
+            <div class="circle">
+
+            </div>
+            <div class="circle">
+
+            </div>
           </div>
           <div class="app_main__element">
             <form class="" action="{{ route('pay.index') }}" method="post">
@@ -34,7 +49,7 @@
                             </span>
                           @enderror
                 </div>
-                <div class="mt-2">
+                <div class="mt-3">
                   <button type="submit" class="form_btn btn w-100">ДАЛЕЕ</button>
                 </div>
               </div>
