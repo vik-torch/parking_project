@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\Pay\IndexController as PayController;
 // use App\Http\Controllers\Pay\IndexController as PayController;
+use App\Http\Controllers\Pay\LoyaltyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,11 @@ use App\Http\Controllers\Pay\IndexController as PayController;
 Route::get('/', [MainController::class, 'index']);
 
 Route::get('/pay', [PayController::class, 'index'])->name('pay.index');
+
+// Это нужно переделать под реальную проверку номера билета и редирект на нужную страницу
 Route::post('/pay', [PayController::class, 'index'])->name('pay.checkTicket');
+
+Route::get('/pay/loyalty', [LoyaltyController::class, 'index'])->name('pay.loyalty');
 
 // Route::group(['namespace' => 'App\Http\Controllers'], function() {
 //   Route::get('/', 'MainController@index');

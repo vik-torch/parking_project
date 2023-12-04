@@ -51,9 +51,10 @@ body {
   color: #FFFFFF;
 }
 
-/* .app_main__element {
-  max-width: 320px;
-} */
+.app_main__element {
+  /* max-width: 320px; */
+  margin-bottom: 1rem;
+}
 .app_main__content {
   max-width: 320px;
 }
@@ -101,11 +102,11 @@ body {
   color: #494949;
 }
 .ticket_number__wrapper {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .list_item__wrapper {
-  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .form-group label {
@@ -171,6 +172,28 @@ body {
 .parking_btn:hover {
   background-color: #DB9900 !important;
   /* color: #212529; */
+}
+
+
+.app_main__debt {
+  padding: 1rem;
+  border: 0.1rem solid;
+  border-radius: 0.4rem;
+  border-color: red;
+  color: red;
+  line-height: 19px;
+}
+.app_main__debt span {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+
+.parking_border {
+  border: 0.1rem solid;
+  border-radius: 0.4rem;
+  border-color: #FEB101;
 }
 
 

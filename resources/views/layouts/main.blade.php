@@ -13,7 +13,7 @@
   <body>
     @include('layouts.header')
 
-    @yield('content')
+    @yield('content_wrapper')
 
     @include('layouts.footer')
   </body>

@@ -30,6 +30,9 @@ class Steps
       case '/pay':
         this.currentStep = 2;
         break;
+      case '/pay/loyalty':
+        this.currentStep = 3;
+        break;
     }
   }
 
@@ -38,6 +41,7 @@ class Steps
    */
   setStepsColor()
   {
+    // сделать здесь закрашивание всех предыдущих шагов
     let step = this.currentStep
     $(`.parking_step[data-step=${step}]`).addClass('step_active');
   }
