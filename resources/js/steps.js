@@ -1,23 +1,7 @@
-var stepsConfig = [
-  {
-    placeData: '1'
-  },
-  {
-    placeData: '2'
-  },
-  {
-    placeData: '3'
-  },
-  {
-    placeData: '4'
-  },
-];
-
 class Steps
 {
-  constructor(config)
+  constructor()
   {
-    this.config = config;
     this.currentStep = 1;
     this.init();
     this.setStepsColor();
@@ -31,6 +15,7 @@ class Steps
         this.currentStep = 2;
         break;
       case '/pay/loyalty':
+      case '/pay/card':
         this.currentStep = 3;
         break;
     }
@@ -41,12 +26,14 @@ class Steps
    */
   setStepsColor()
   {
-    // сделать здесь закрашивание всех предыдущих шагов
-    let step = this.currentStep
-    $(`.parking_step[data-step=${step}]`).addClass('step_active');
+    let {currentStep} = this;
+    for(let step=2; step <= currentStep; step++)
+    {
+      $(`.parking_step[data-step=${step}]`).addClass('step_active');
+    }
   }
 }
 
 $( () => {
-  var steps = new Steps(stepsConfig)
+  var steps = new Steps()
 })

@@ -159,7 +159,7 @@ body {
   margin-right: 5%;
 }
 .btn_icon {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .icon_rotate::before {
   transform: rotate(-35deg);
@@ -168,13 +168,14 @@ body {
 .parking_btn {
   background-color: #FEB101;
   font-weight: 600;
+  color: #3A3535;
 }
 .parking_btn:hover {
   background-color: #DB9900 !important;
   /* color: #212529; */
 }
 
-
+/* блок задолженности */
 .app_main__debt {
   padding: 1rem;
   border: 0.1rem solid;
@@ -192,8 +193,43 @@ body {
 
 .parking_border {
   border: 0.1rem solid;
-  border-radius: 0.4rem;
+  border-radius: 0.7rem;
   border-color: #FEB101;
+}
+
+
+/* добавление чека */
+.app_accordion__add_check {
+  padding: 0.5rem;
+}
+.add_check__title {
+  white-space: nowrap;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+.app_accordion__header {
+  margin-bottom: 1rem;
+}
+.app_accordeon__button {
+  margin: 0.3rem;
+  width: 100%
+}
+.camera_wrapp {
+  background-color: #FFF;
+  margin-top: 1rem;
+}
+.camera {
+  padding: 1rem;
+}
+.app_video__wrapper {
+  height: 15vh;
+}
+video {
+  border: 0.1rem solid;
+  border-color: #FEB101;
+  width: 90%;
+  height: 60%;
+  margin: auto;
 }
 
 
@@ -201,7 +237,6 @@ main {
   margin-bottom: 2rem;
   /* height: 20rem; */
 }
-
 
 
 @media(max-width: 350px) {
