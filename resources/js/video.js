@@ -4,6 +4,7 @@ const constraints = {
   video: true,
 };
 
+try {
 navigator.mediaDevices
   .getUserMedia(constraints)
   .then((stream) => {
@@ -28,3 +29,7 @@ navigator.mediaDevices
       console.error(`getUserMedia error: ${error.name}`, error);
     }
   });
+}
+catch(e) {
+  console.log(e);
+}

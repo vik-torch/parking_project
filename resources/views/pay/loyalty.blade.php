@@ -4,6 +4,8 @@
     <p>Сканирование билета</p>
     <div class="app_pay__check_list">
       <div class="app_pay__check_list__wraper">
+
+        <!-- Добавление билетов -->
         <div class="add_check parking_border">
           <!-- <div class="accordion" id="accordionAddTicket"> -->
           <div class="app_accordion__add_check" id="accordionAddTicket">
@@ -21,7 +23,7 @@
                 </button>
               </h2>
               <!-- <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionAddTicket"> -->
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionAddTicket">
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionAddTicket">
                 <div class="accordion-body camera_wrapp">
                   <div class="camera d-flex flex-column">
                     <div class="app_video__wrapper d-flex">
@@ -34,9 +36,14 @@
             </div>
           </div>
         </div>
-        <div class="ticket_list">
 
+        <!-- Список билетов -->
+        <div class="ticket_list">
+          <div class="app_ticket__item">
+
+          </div>
         </div>
+
       </div>
     </div>
   </div>
