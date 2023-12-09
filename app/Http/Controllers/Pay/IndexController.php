@@ -13,4 +13,9 @@ class IndexController extends BaseController
       $ticket_number = $request->input('ticket_number');
       return view('pay.index', compact('ticket_number'));
     }
+
+    public function successPay()
+    {
+      return view('pay.success_pay');
+    }
 }

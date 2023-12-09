@@ -5,6 +5,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\Pay\IndexController as PayController;
 // use App\Http\Controllers\Pay\IndexController as PayController;
 use App\Http\Controllers\Pay\LoyaltyController;
+use App\Http\Controllers\Pay\CardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,7 @@ use App\Http\Controllers\Pay\LoyaltyController;
 // });
 
 // Route::get('/mypage', [MainController::class, 'index']);
-Route::get('/', [MainController::class, 'index']);
+Route::get('/', [MainController::class, 'index'])->name('main');
 
 Route::get('/pay', [PayController::class, 'index'])->name('pay.index');
 
@@ -30,6 +31,8 @@ Route::get('/pay', [PayController::class, 'index'])->name('pay.index');
 Route::post('/pay', [PayController::class, 'index'])->name('pay.checkTicket');
 
 Route::get('/pay/loyalty', [LoyaltyController::class, 'index'])->name('pay.loyalty');
+Route::get('/pay/card', [CardController::class, 'index'])->name('pay.card');
+Route::get('/pay/success', [PayController::class, 'successPay'])->name('pay.success');
 
 // Route::group(['namespace' => 'App\Http\Controllers'], function() {
 //   Route::get('/', 'MainController@index');

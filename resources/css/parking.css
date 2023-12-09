@@ -46,6 +46,20 @@ header {
   width: 10%;
 }
 
+.success_circle {
+  width: 5rem;
+  height: 5rem;
+  background-color: #FEB101;
+}
+.success_circle i {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.app_success_message {
+  padding: 1.3rem 0 1rem;
+}
+
 body {
   background-color: #1B1B1B;
   color: #FFFFFF;
@@ -133,17 +147,26 @@ body {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); */
 }
 
-
-.payment_method__item {
+.parking_btn {
+  background-color: #FEB101;
   border: none;
   border-radius: 0.4rem;
-  background-color: #b9bdbb;
-  min-height: 4rem;
-  position: relative;
+  color: #3A3535;
+  font-weight: 600;
+  height: 3.375rem;
+  line-height: normal;
+  width: 100%;
+}
+.parking_btn:hover {
+  background-color: #DB9900 !important;
+  /* color: #212529; */
+}
+
+
+.payment_method__btn {
   font-size: 1rem;
-  width:100%;
-  /* height: 80px; */
   height: 5rem;
+  position: relative;
 }
 .payment_method__img_bg {
   position: absolute;
@@ -165,15 +188,6 @@ body {
   transform: rotate(-35deg);
 }
 
-.parking_btn {
-  background-color: #FEB101;
-  font-weight: 600;
-  color: #3A3535;
-}
-.parking_btn:hover {
-  background-color: #DB9900 !important;
-  /* color: #212529; */
-}
 
 /* блок задолженности */
 .app_main__debt {
@@ -204,16 +218,32 @@ body {
 }
 .add_check__title {
   white-space: nowrap;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
+  padding-left: 1rem;
   font-weight: 500;
 }
 .app_accordion__header {
   margin-bottom: 1rem;
 }
 .app_accordeon__button {
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
+  padding: 0.3rem;
   width: 100%
 }
+.accordion-button::after, .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transition-duration: 0.3s;
+}
+.accordion-button::after {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+}
+
 .camera_wrapp {
   background-color: #FFF;
   margin-top: 1rem;
@@ -230,6 +260,22 @@ video {
   width: 90%;
   height: 60%;
   margin: auto;
+}
+
+.check_list{
+  border-bottom: 0.06rem solid;
+  border-color: #FEB101;
+}
+.app_check__item_wrapper {
+  padding: 0.8rem 0;
+}
+
+.text_emphasis {
+  font-weight: 600;
+}
+
+.switch_btn__item {
+  width: 47%;
 }
 
 

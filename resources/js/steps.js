@@ -18,6 +18,9 @@ class Steps
       case '/pay/card':
         this.currentStep = 3;
         break;
+      case '/pay/success':
+        this.currentStep = 4;
+        break;
     }
   }
 

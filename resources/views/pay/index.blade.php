@@ -16,8 +16,8 @@
   </div>
   <div class="app_main__element">
     <div class="list_item__wrapper">
-      <a href="#">
-        <button id="payment_card" class="payment_method__item parking_btn" type="button" name="button">
+      <a href="{{ route('pay.card') }}">
+        <button id="payment_card" class="payment_method__btn parking_btn" type="button" name="button">
           <div class="d-flex align-items-center">
             <div class="btn_icon__wrapper">
               <i class="bi bi-credit-card btn_icon icon_rotate"></i>
@@ -31,7 +31,7 @@
     </div>
     <div class="list_item__wrapper">
       <a href="{{ route('pay.loyalty') }}">
-        <button id="payment_loyalty" class="payment_method__item parking_btn" type="button" name="button">
+        <button id="payment_loyalty" class="payment_method__btn parking_btn" type="button" name="button">
           <div class="d-flex align-items-center">
             <div class="btn_icon__wrapper">
               <i class="bi bi-percent btn_icon"></i>
