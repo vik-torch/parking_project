@@ -16,5 +16,6 @@
     @yield('content_wrapper')
 
     @include('layouts.footer')
+    @include('layouts.info')
   </body>
 </html>

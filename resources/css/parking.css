@@ -106,7 +106,7 @@ body {
 } */
 
 
-.app_main__title {
+.app__title {
   font-weight: 600;
   text-align: center;
 }
@@ -225,8 +225,7 @@ body {
 .app_accordion__header {
   margin-bottom: 1rem;
 }
-.app_accordeon__button {
-  /* margin: 0.3rem; */
+.app_accordeon__button, .info_element__wrapper {
   padding: 0.3rem;
   width: 100%
 }
@@ -278,6 +277,24 @@ video {
   width: 47%;
 }
 
+
+.app_info_panel {
+  background-color: inherit;
+  position: absolute;
+  top: 5rem;
+  height: calc(100vh - 5rem);
+  width: 100%;
+  left: 100vw;
+}
+.app_info_panel p{
+  margin-bottom: 0;
+  text-align: start;
+}
+.acordeon_item__bordered {
+  border-top: 0.1rem solid;
+  border-bottom: 0.1rem solid;
+  border-color: #4A4A4A;
+}
 
 main {
   margin-bottom: 2rem;

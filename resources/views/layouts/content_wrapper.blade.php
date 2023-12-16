@@ -8,7 +8,7 @@
         <div class="app_main__content">
 
           <div class="app_main__element">
-            <p class="app_main__title">
+            <p class="app__title">
               ОПЛАТА ПАРКОВОЧНОГО МЕСТА ТРЦ “РИО” ДМИТРОВКА
             </p>
           </div>
